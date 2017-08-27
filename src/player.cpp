@@ -2381,9 +2381,9 @@ void player::memorial( std::ostream &memorial_file, std::string epitaph )
                   << indent << string_format( _( "Per %d" ), per_max ) << eol;
     memorial_file << eol;
 
-    //Last 20 messages
+    //Last 100 messages
     memorial_file << _( "Final Messages:" ) << eol;
-    std::vector<std::pair<std::string, std::string> > recent_messages = Messages::recent_messages( 20 );
+    std::vector<std::pair<std::string, std::string> > recent_messages = Messages::recent_messages( 100 );
     for( auto &recent_message : recent_messages ) {
         memorial_file << indent << recent_message.first << " " << recent_message.second;
         memorial_file << eol;
