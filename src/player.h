@@ -10,6 +10,7 @@
 #include "weighted_list.h"
 #include "game_constants.h"
 #include "craft_command.h"
+#include "ret_val.h"
 
 #include <unordered_set>
 #include <bitset>
@@ -75,6 +76,9 @@ enum edible_rating {
     // Some weird stuff that requires a tool we don't have
     NO_TOOL
 };
+
+// EDIBLE/INEDIBLE are used as the defaults for success/failure respectively.
+using edible_ret_val = ret_val<edible_rating, EDIBLE, INEDIBLE>;
 
 enum class rechargeable_cbm {
     none = 0,
@@ -765,12 +769,12 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
         bool eat( item &food, bool force = false );
 
         /** Can the food be [theoretically] eaten no matter the consquences? */
-        edible_rating can_eat( const item &food, std::string *err = nullptr ) const;
+        edible_ret_val can_eat( const item &food ) const;
         /**
          * Same as @ref can_eat, but takes consequences into account.
          * Asks about them if @param interactive is true, refuses otherwise.
          */
-        edible_rating will_eat( const item &food, bool interactive = false ) const;
+        edible_ret_val will_eat( const item &food, bool interactive = false ) const;
 
         // TODO: Move these methods out of the class.
         rechargeable_cbm get_cbm_rechargeable_with( const item &it ) const;
@@ -858,7 +862,7 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
             } else if( has_trait( trait_id( "BADBACK" ) ) ) {
                 str /= 1.35;
             }
-            return get_str() >= obj.lift_strength();
+            return str >= obj.lift_strength();
         }
 
         /**
@@ -1107,7 +1111,7 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
         /** Returns 1 if the player is wearing an item of that count on one foot, 2 if on both, and zero if on neither */
         int shoe_type_count(const itype_id &it) const;
         /** Returns true if the player is wearing power armor */
-        bool is_wearing_power_armor(bool *hasHelmet = NULL) const;
+        bool is_wearing_power_armor(bool *hasHelmet = nullptr) const;
         /** Returns wind resistance provided by armor, etc **/
         int get_wind_resistance(body_part bp) const;
         /** Returns the effect of pain on stats */
@@ -1265,9 +1269,8 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
          * Check if the player can disassemble an item using the current crafting inventory
          * @param obj Object to to check for disassembly
          * @param inv current crafting inventory
-         * @param err Error message in case of e.g. missing tools/charges.
          */
-        bool can_disassemble( const item &obj, const inventory &inv, std::string *err = nullptr ) const;
+        ret_val<bool> can_disassemble( const item &obj, const inventory &inv ) const;
 
         bool disassemble();
         bool disassemble( int pos );
@@ -1487,7 +1490,7 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
         /**
          * Set which mission is active. The mission must be listed in @ref active_missions.
          */
-        void set_active_mission( mission &mission );
+        void set_active_mission( mission &cur_mission );
         /**
          * Called when a mission has been assigned to the player.
          */
@@ -1496,7 +1499,7 @@ class player : public Character, public JsonSerializer, public JsonDeserializer
          * Called when a mission has been completed or failed. Either way it's finished.
          * Check @ref mission::has_failed to see which case it is.
          */
-        void on_mission_finished( mission &mission );
+        void on_mission_finished( mission &cur_mission );
         /**
          * Called when a mutation is gained
          */

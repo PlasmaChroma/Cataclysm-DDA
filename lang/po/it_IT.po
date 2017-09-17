@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cataclysm-DDA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-25 17:05+0800\n"
-"PO-Revision-Date: 2017-08-25 09:13+0000\n"
+"POT-Creation-Date: 2017-09-09 12:26+0800\n"
+"PO-Revision-Date: 2017-09-09 04:39+0000\n"
 "Last-Translator: Brett Dong <brett.browning.dong@gmail.com>\n"
 "Language-Team: Italian (Italy) (http://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -3430,18 +3430,6 @@ msgid ""
 msgstr "Nella metà del XXI sec. le potenze militari iniziarono a ricercare armi funzionanti tramite energia. Il risultato fu la carica a fusione standard, capace di sparare colpi di gas super riscaldati alla quasi velocità della luce, senza rinculo. Questo è stato fatto a mano da pezzi di ricambio."
 
 #: lang/json/AMMO_from_json.py
-msgid "reloaded 5x50mm flechette"
-msgstr ""
-
-#. ~ Description for reloaded 5x50mm flechette
-#: lang/json/AMMO_from_json.py
-msgid ""
-"Designed to defeat modern body armor, the Rivtech 5x50mm flechette round "
-"features a biodegradable sabot and a single, fin-stabilized penetrator.  "
-"This one has been hand-reloaded."
-msgstr "Progettato per sconfiggere le armature più moderne, il proiettile a fléchette 5x50mm della Rivtech ha un bossolo biodegradabile e un singolo proiettile penetrante stabilizzato. Questo è stato ricaricato a mano."
-
-#: lang/json/AMMO_from_json.py
 msgid "H&K 12mm"
 msgstr "H&K 12mm"
 
@@ -4365,6 +4353,18 @@ msgid ""
 "round features a biodegradable sabot and a single, fin-stabilized tungsten "
 "alloy projectile."
 msgstr "Progettato per sconfiggere le armature più moderne, il proiettile penetratore Rivtech 5x50mm RA119 ha un sabot biodegradabile e un singolo proiettile di tungsteno stabilizzato a pinna,"
+
+#: lang/json/AMMO_from_json.py
+msgid "reloaded 5x50mm flechette"
+msgstr ""
+
+#. ~ Description for reloaded 5x50mm flechette
+#: lang/json/AMMO_from_json.py
+msgid ""
+"Designed to defeat modern body armor, the Rivtech 5x50mm flechette round "
+"features a biodegradable sabot and a single, fin-stabilized penetrator.  "
+"This one has been hand-reloaded."
+msgstr "Progettato per sconfiggere le armature più moderne, il proiettile a fléchette 5x50mm della Rivtech ha un bossolo biodegradabile e un singolo proiettile penetrante stabilizzato. Questo è stato ricaricato a mano."
 
 #: lang/json/AMMO_from_json.py
 msgid ".700 NX"
@@ -27475,16 +27475,16 @@ msgid ""
 "sports cars."
 msgstr "Un massiccio e potentissimo motore V12, di solito usato nelle auto sportive a prestazioni elevate."
 
-#: lang/json/GENERIC_from_json.py
-msgid "5x50mm hull"
-msgid_plural "5x50mm hulls"
-msgstr[0] "bossolo 5x50mm"
-msgstr[1] "bossoli 5x50mm"
+#: lang/json/ENGINE_from_json.py
+msgid "V12 diesel engine"
+msgstr ""
 
-#. ~ Description for 5x50mm hull
-#: lang/json/GENERIC_from_json.py
-msgid "An empty plastic hull from a 5x50mm flechette round."
-msgstr "Un bossolo di plastica per flèchette da 5x50mm."
+#. ~ Description for V12 diesel engine
+#: lang/json/ENGINE_from_json.py
+msgid ""
+"A massive and extremely powerful V12 engine, usually built into heavy "
+"trucks."
+msgstr ""
 
 #: lang/json/GENERIC_from_json.py
 msgid "exploding arrowhead"
@@ -32836,6 +32836,17 @@ msgstr[1] "bossoli da 4.6x30mm"
 #: lang/json/GENERIC_from_json.py
 msgid "An empty casing from a 4.6x30mm round."
 msgstr "Un bossolo vuoto per proiettile da 4.6x30mm."
+
+#: lang/json/GENERIC_from_json.py
+msgid "5x50mm hull"
+msgid_plural "5x50mm hulls"
+msgstr[0] "bossolo 5x50mm"
+msgstr[1] "bossoli 5x50mm"
+
+#. ~ Description for 5x50mm hull
+#: lang/json/GENERIC_from_json.py
+msgid "An empty plastic hull from a 5x50mm flechette round."
+msgstr "Un bossolo di plastica per flèchette da 5x50mm."
 
 #: lang/json/GENERIC_from_json.py
 msgid ".500 S&W Magnum casing"
@@ -42987,6 +42998,19 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: lang/json/TOOL_from_json.py
+msgid "clairvoyance rod"
+msgid_plural "clairvoyance rods"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for clairvoyance rod
+#: lang/json/TOOL_from_json.py
+msgid ""
+"Item to test aep_clairvoyance_plus flag. If this spawns randomly, then it's "
+"a bug."
+msgstr ""
+
+#: lang/json/TOOL_from_json.py
 msgid "cash card"
 msgid_plural "cash cards"
 msgstr[0] "carta di credito"
@@ -43561,6 +43585,41 @@ msgstr[1] ""
 msgid ""
 "This is a large pair of bolt cutters.  You could use them to cut padlocks or"
 " heavy gauge wire."
+msgstr ""
+
+#: lang/json/TOOL_from_json.py
+msgid "bone flute"
+msgid_plural "bone flutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Use action descriptions for bone flute.
+#. ~ Use action descriptions for flute.
+#: lang/json/TOOL_from_json.py
+msgid "You play a little tune on your flute."
+msgstr ""
+
+#. ~ Use action descriptions for bone flute.
+#. ~ Use action descriptions for flute.
+#: lang/json/TOOL_from_json.py
+msgid "You play a beautiful piece on your flute."
+msgstr ""
+
+#. ~ Use action descriptions for bone flute.
+#: lang/json/TOOL_from_json.py
+msgid ""
+"You play a piece on your bone flute that resembles the howling wind through "
+"Aurignacian caves."
+msgstr ""
+
+#. ~ Use action descriptions for bone flute.
+#: lang/json/TOOL_from_json.py
+msgid "Your bone flute wails for the fallen during the hunt."
+msgstr ""
+
+#. ~ Description for bone flute
+#: lang/json/TOOL_from_json.py
+msgid "A polished bone flute with five finger holes."
 msgstr ""
 
 #: lang/json/TOOL_from_json.py lang/json/trap_from_json.py
@@ -45253,16 +45312,6 @@ msgid "flute"
 msgid_plural "flutes"
 msgstr[0] ""
 msgstr[1] ""
-
-#. ~ Use action descriptions for flute.
-#: lang/json/TOOL_from_json.py
-msgid "You play a little tune on your flute."
-msgstr ""
-
-#. ~ Use action descriptions for flute.
-#: lang/json/TOOL_from_json.py
-msgid "You play a beautiful piece on your flute."
-msgstr ""
 
 #. ~ Use action descriptions for flute.
 #: lang/json/TOOL_from_json.py
@@ -63685,6 +63734,10 @@ msgid "Toggle Overlays"
 msgstr ""
 
 #: lang/json/keybinding_from_json.py
+msgid "Toggle City Labels"
+msgstr ""
+
+#: lang/json/keybinding_from_json.py
 msgid "Toggle Explored"
 msgstr ""
 
@@ -69042,6 +69095,11 @@ msgstr ""
 msgid "everyanimalthateverlived..bursting.from.YOU!"
 msgstr ""
 
+#. ~ Mutation class: Chimera iv_sleep_message
+#: lang/json/mutation_category_from_json.py
+msgid "With a final *pop*, you go out like a light."
+msgstr ""
+
 #. ~ Mutation class: Chimera iv_sound_message
 #: lang/json/mutation_category_from_json.py
 msgid "You roar in agony!!"
@@ -69072,6 +69130,11 @@ msgstr ""
 #. ~ Mutation class: Fey iv_message
 #: lang/json/mutation_category_from_json.py
 msgid "Everything goes green for a second."
+msgstr ""
+
+#. ~ Mutation class: Fey iv_sleep_message
+#: lang/json/mutation_category_from_json.py
+msgid "It's painfully beautiful..."
 msgstr ""
 
 #. ~ Mutation class: Fey Male memorial messsage
@@ -75081,6 +75144,10 @@ msgstr ""
 #: lang/json/start_location_from_json.py
 msgid "farm"
 msgstr "fattoria"
+
+#: lang/json/overmap_terrain_from_json.py
+msgid "dense urban"
+msgstr ""
 
 #: lang/json/overmap_terrain_from_json.py
 msgid "2-story motel"
@@ -91686,6 +91753,10 @@ msgid "Truck Trailer"
 msgstr "Autotreno"
 
 #: lang/json/vehicle_from_json.py
+msgid "Heavy Duty Cargo Truck"
+msgstr ""
+
+#: lang/json/vehicle_from_json.py
 msgid "Automatic Street Sweeper"
 msgstr ""
 
@@ -96571,14 +96642,17 @@ msgid "m/s"
 msgstr ""
 
 #: src/cata_utility.cpp
+msgctxt "Volume unit"
 msgid "c"
 msgstr ""
 
 #: src/cata_utility.cpp
+msgctxt "Volume unit"
 msgid "L"
 msgstr "L"
 
 #: src/cata_utility.cpp
+msgctxt "Volume unit"
 msgid "qt"
 msgstr ""
 
@@ -98111,10 +98185,6 @@ msgstr ""
 
 #: src/consumption.cpp
 msgid "You can't finish it all!"
-msgstr ""
-
-#: src/consumption.cpp
-msgid "You pick out the edible parts and throw away the rest."
 msgstr ""
 
 #: src/consumption.cpp
@@ -100294,7 +100364,7 @@ msgstr "Originali"
 msgid "Powerful"
 msgstr "Possenti"
 
-#: src/faction.cpp
+#: src/faction.cpp src/options.cpp
 msgid "Solid"
 msgstr "Solidi"
 
@@ -104685,11 +104755,11 @@ msgid "There is a sheer drop halfway down.  Jump?"
 msgstr "È parecchio profondo laggiù. Saltare?"
 
 #: src/game.cpp
-msgid ">:W;AUTO: goes down"
+msgid "AUTO: goes down"
 msgstr ""
 
 #: src/game.cpp
-msgid "<:W;AUTO: goes up"
+msgid "AUTO: goes up"
 msgstr ""
 
 #: src/game.cpp
@@ -110325,8 +110395,8 @@ msgid "You attempt to pry open your wallet"
 msgstr "Tenti di forzare l'apertura del tuo portafoglio"
 
 #: src/iuse.cpp
-msgid "but alas. You are just too miserly."
-msgstr "Ahimè. Sei gia troppo misero."
+msgid "but alas.  You are just too miserly."
+msgstr ""
 
 #: src/iuse.cpp
 msgid "You pry open the door."
@@ -110335,6 +110405,10 @@ msgstr "Hai forzato la porta."
 #: src/iuse.cpp
 msgid "You pry, but cannot pry open the door."
 msgstr "Provi a forzare, ma non sei riuscito a forzare la porta."
+
+#: src/iuse.cpp
+msgid "You notice the door is unlocked, so you simply open it."
+msgstr ""
 
 #: src/iuse.cpp
 msgid "You lift the manhole cover."
@@ -117651,7 +117725,6 @@ msgstr ""
 msgid "The %s was destroyed!  GAME OVER!"
 msgstr ""
 
-#. ~ %s is the possessive form of the monster's name
 #: src/mondeath.cpp
 #, c-format
 msgid "The %s's hands fly to its pockets, but there's nothing left in them."
@@ -121772,6 +121845,30 @@ msgid "Where new log messages should show."
 msgstr ""
 
 #: src/options.cpp
+msgid "Pixel Minimap drawing mode"
+msgstr ""
+
+#: src/options.cpp
+msgid "Specified the mode in which the minimap drawn."
+msgstr ""
+
+#: src/options.cpp
+msgid "Squares"
+msgstr ""
+
+#: src/options.cpp
+msgid "Dots"
+msgstr ""
+
+#: src/options.cpp
+msgid "Pixel Minimap brightness"
+msgstr ""
+
+#: src/options.cpp
+msgid "Overal brightness of pixel-detail minimap."
+msgstr ""
+
+#: src/options.cpp
 msgid ""
 "Use software renderer instead of graphics card acceleration.  Requires "
 "restart."
@@ -122080,6 +122177,39 @@ msgid ""
 "This is FEMA camp %d%d.  Supplies are limited, please bring supplemental "
 "food, water, and bedding.  This is FEMA camp %d%d.  A designated long-term "
 "emergency shelter."
+msgstr ""
+
+#. ~ First parameter is a terrain name, second parameter is a city name.
+#: src/overmapbuffer.cpp
+#, c-format
+msgid "%1$s in central %2$s"
+msgstr ""
+
+#. ~ First parameter is a terrain name, second parameter is a direction, and
+#. third parameter is a city name.
+#: src/overmapbuffer.cpp
+#, c-format
+msgid "%1$s in %2$s %3$s"
+msgstr ""
+
+#. ~ First parameter is a terrain name, second parameter is a city name.
+#: src/overmapbuffer.cpp
+#, c-format
+msgid "%1$s in %2$s"
+msgstr ""
+
+#. ~ First parameter is a terrain name, second parameter is a direction, and
+#. third parameter is a city name.
+#: src/overmapbuffer.cpp
+#, c-format
+msgid "%1$s on the %2$s outskirts of %3$s"
+msgstr ""
+
+#. ~ First parameter is a terrain name, second parameter is a direction, and
+#. third parameter is a city name.
+#: src/overmapbuffer.cpp
+#, c-format
+msgid "%1$s %2$s from %3$s"
 msgstr ""
 
 #: src/pickup.cpp
@@ -122430,32 +122560,12 @@ msgstr "una donna disoccupata"
 msgid "a %s"
 msgstr "un %s"
 
-#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a terrain
-#. name.
+#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
+#. description
+#. that designates the location relative to its surroundings.
 #: src/player.cpp
 #, c-format
-msgid "%1$s was killed in a %2$s in the middle of nowhere."
-msgstr ""
-
-#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a terrain
-#. name.
-#: src/player.cpp
-#, c-format
-msgid "%1$s was killed in a %2$s in the wilderness."
-msgstr ""
-
-#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a terrain
-#. name, third parameter is a city name.
-#: src/player.cpp
-#, c-format
-msgid "%1$s was killed in a %2$s on the outskirts of %3$s."
-msgstr ""
-
-#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a terrain
-#. name, third parameter is a city name.
-#: src/player.cpp
-#, c-format
-msgid "%1$s was killed in a %2$s in %3$s."
+msgid "%1$s was killed in a %2$s."
 msgstr ""
 
 #: src/player.cpp
@@ -122990,6 +123100,10 @@ msgstr ""
 #: src/player.cpp
 #, c-format
 msgid "You are grabbed by %s!"
+msgstr ""
+
+#: src/player.cpp
+msgid "Filth from your clothing has implanted deep in the wound."
 msgstr ""
 
 #: src/player.cpp
