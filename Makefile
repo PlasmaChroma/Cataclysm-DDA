@@ -201,7 +201,7 @@ RC  = $(CROSS)windres
 AR  = $(CROSS)ar
 
 # We don't need scientific precision for our math functions, this lets them run much faster.
-CXXFLAGS += -ffast-math
+CXXFLAGS += -ffast-math -march=native -mtune=native
 LDFLAGS += $(PROFILE)
 
 # enable optimizations. slow to build
@@ -218,7 +218,8 @@ ifdef RELEASE
     ifeq ($(CXXMACHINE), x86_64-w64-mingw32.static)
       OPTLEVEL = -O3
     else
-      OPTLEVEL = -Os
+      # was -Os
+      OPTLEVEL = -O3
     endif
   endif
   ifdef LTO
